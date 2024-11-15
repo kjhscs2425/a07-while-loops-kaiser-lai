@@ -1,1 +1,3 @@
-# write a factorial function, given n, you return n!
+def fact(n):
+    assert n >= 1
+    return {0: 1}.get(n, n * fact(n-1))
